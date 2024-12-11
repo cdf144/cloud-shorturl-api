@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate:dev": "dotenv -e ../.env -- npx prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.1",
+    "aws-serverless-express": "^3.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^6.0.1"
+  }
+}
